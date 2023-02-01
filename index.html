@@ -1,20 +1,28 @@
 ---
-title: Madhusudan
+title: Madhusudan Upadhyay
 ---
 
 <section class="hero diagonal">
-	<div class="container">
-		<h2 class="editable">We build websites</h2>
-		<p class="subtext editable">This is the <strong>Madhusudan</strong> Upadhyay <a href="https://madhusudanupadhyay.com.np/">Madhusudan Upadhyay</a>. Urban is a strong foundation for the web presence of your agency.</p>
-		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
-	</div>
+	<!----<div class="container">
+		<div>
+			<ul class="image-grid">
+				{% for post in site.posts limit: 1 %}
+					<li><a href="{{ site.baseurl }}{{ post.url }}"><img src="/images/me.jpg"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<h2 class="editable">Welcome</h2>
+		<p class="subtext editable">This is the <a href="https://madhusudanupadhyay.com.np/"> <strong>Madhusudan Upadhyay</strong></a>.</p>
+		<p>An innovative and passionate IT specialist and system administrator with a wide range of expertise in selecting and setting up diverse technical equipment, windows system, and server administration.</p> 
+	</div> -->
+	
 </section>
 
 <section class="diagonal patterned">
 	<div class="container halves">
 		<div>
-			<h3 class="editable">Some of our work</h3>
-			<p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
+			<h3 class="editable">My Portfolio</h3>
+			<p class="editable">Here you can view my all portfolio.</p>
 			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
 		</div>
 		<div>
@@ -27,17 +35,19 @@ title: Madhusudan
 	</div>
 </section>
 
-<!----- <section class="diagonal alternate">
+<section class="diagonal alternate">
 	<div class="container halves">
 		<div>
-			<ul class="image-list">
-				<li><img src="{{ site.baseurl }}/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;"></li>
-				<li><img src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png" width="300"></li>
-			</ul>
+			<h3 class="editable">Some of our work</h3>
+			<p class="editable">Here are my blog content.</p>
+			<p class="editable"><a href="{{ site.baseurl }}/blog/">View Full Blog &rarr;</a></p>
 		</div>
 		<div>
-			<h3 class="editable">Latest software, greatest perfomance</h3>
-			<p class="editable">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
+			<ul class="image-grid">
+				{% for post in site.posts limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ post.url }}"><img src="{% include relative-src.html src=post.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
 		</div>
 	</div>
-</section> --->
+</section> 

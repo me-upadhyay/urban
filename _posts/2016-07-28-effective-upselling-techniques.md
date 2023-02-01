@@ -4,6 +4,7 @@ categories:
   - sales
   - tips
 author_staff_member: james
+image_path: /images/clients/cause.jpg
 show_comments: true
 ---
 
