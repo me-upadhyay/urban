@@ -3,32 +3,34 @@ title: Madhusudan Upadhyay
 ---
 
 <section class="hero diagonal">
-	<!----<div class="container">
-		<div>
-			<ul class="image-grid">
-				{% for post in site.posts limit: 1 %}
-					<li><a href="{{ site.baseurl }}{{ post.url }}"><img src="/images/me.jpg"></a></li>
-				{% endfor %}
-			</ul>
-		</div>
-		<h2 class="editable">Welcome</h2>
-		<p class="subtext editable">This is the <a href="https://madhusudanupadhyay.com.np/"> <strong>Madhusudan Upadhyay</strong></a>.</p>
-		<p>An innovative and passionate IT specialist and system administrator with a wide range of expertise in selecting and setting up diverse technical equipment, windows system, and server administration.</p> 
-	</div> -->
+	<div class="container halves">
+		 <div>
+			<h1 class="editable" style="font-size:10vw">Hi, Welcome</h1>
+			<p class="subtext editable">It's me <a href="https://madhusudanupadhyay.com.np/"> <strong>Madhusudan Upadhyay</strong></a>.</p>
+			<H5><p>An innovative and passionate IT specialist and Content Writer.</p> </H5>
+			</div>
+			<div>
+			<!---	<ul class="image-grid">
+					<img src="/images/logo.svg"></a>
+					
+				</ul> -->
+			</div>
+	</div> 
 	
+		
 </section>
 
 <section class="diagonal patterned">
 	<div class="container halves">
 		<div>
-			<h3 class="editable">My Portfolio</h3>
-			<p class="editable">Here you can view my all portfolio.</p>
-			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+			<h3 class="editable">Featured Post</h3>
+			<p class="editable">Scroll Down for more content</p>
+			<!-- <p class="editable"><a href="{{ site.baseurl }}/blog/">View Full Blog &rarr;</a></p> -->
 		</div>
 		<div>
 			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% for post in site.posts limit: 1 %}
+					<li><a href="{{ site.baseurl }}{{ post.url }}"><img src="{% include relative-src.html src=post.image_path %}"></a></li>
 				{% endfor %}
 			</ul>
 		</div>

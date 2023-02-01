@@ -3,6 +3,7 @@ title: The history of marketing
 categories:
   - marketing
 author_staff_member: james
+image_path: https://unsplash.it/960/600?image=133
 show_comments: true
 ---
 
